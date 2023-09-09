@@ -476,6 +476,82 @@
   transform: scale(0.95);
 }
 
+/* footer */
+.card-footer {
+  margin-left: 5.1rem;
+  width: fit-content;
+  height: fit-content;
+  background-color: rgb(238, 238, 238);
+  display: flex;
+  padding: 25px 25px;
+  box-sizing: border-box;
+  gap: 20px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.055);
+}
+
+/* container de todas las redes*/
+.socialContainer {
+  width: 52px;
+  height: 52px;
+  background-color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 0.3s;
+}
+
+/* instagram*/
+.containerOne:hover {
+  background-color: #d62976;
+  transition-duration: 0.3s;
+}
+
+/* twitter*/
+.containerTwo:hover {
+  background-color: #00acee;
+  transition-duration: 0.3s;
+}
+
+/* linkdin*/
+.containerThree:hover {
+  background-color: #0072b1;
+  transition-duration: 0.3s;
+}
+
+/* Whatsapp*/
+.containerFour:hover {
+  background-color: #128C7E;
+  transition-duration: 0.3s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.3s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(255, 255, 255);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.3s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 /* vista mobile */
 @media screen and (min-width: 120px) and (max-width: 480px) {
   /* presentacion vista mobile */
@@ -504,6 +580,9 @@
   /* footer */
   footer {
     margin-top: 10rem;
+  }
+  footer .card-footer {
+    margin-left: 3rem;
   }
 }
 /* vista tablet */
@@ -538,6 +617,14 @@
   .btn-card-profile {
     width: 10rem;
     font-size: 1rem;
+  }
+  /* footer */
+  footer {
+    margin-top: 5rem;
+  }
+  footer .card-footer {
+    position: relative;
+    left: 8rem;
   }
 }
 /* vista laptops */
