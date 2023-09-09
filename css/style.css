@@ -195,6 +195,7 @@
 }
 
 .card-profile {
+  margin-left: 50%;
   background-color: #222831;
   width: 22rem;
   height: 37rem;
@@ -570,6 +571,9 @@
     flex-direction: column-reverse;
     align-items: center;
   }
+  .card-profile {
+    margin-left: 0%;
+  }
   /* proyectos vista mobile */
   .card {
     margin-bottom: 7rem;
@@ -618,6 +622,9 @@
     width: 10rem;
     font-size: 1rem;
   }
+  .card-profile {
+    margin-left: 0%;
+  }
   /* footer */
   footer {
     margin-top: 5rem;
@@ -631,6 +638,7 @@
 @media screen and (min-width: 993px) and (max-width: 1400px) {
   /* presentacion vista laptops */
   .card-profile {
+    margin-left: 10%;
     margin-bottom: 17rem;
     height: 32rem;
   }
