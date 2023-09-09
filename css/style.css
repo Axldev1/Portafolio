@@ -29,7 +29,7 @@
 .content__container:after {
   content: "/>";
   position: absolute;
-  right: 33rem;
+  right: 31rem;
 }
 .content__container:after, .content__container:before {
   position: absolute;
