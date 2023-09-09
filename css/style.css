@@ -496,10 +496,14 @@
   }
   /* proyectos vista mobile */
   .card {
-    margin-top: 15rem;
+    margin-bottom: 7rem;
   }
   .proyects {
     margin-bottom: -15rem;
+  }
+  /* footer */
+  footer {
+    margin-top: 10rem;
   }
 }
 /* vista tablet */
@@ -526,7 +530,7 @@
     margin-top: 12rem;
   }
   .proyects {
-    margin-bottom: -6rem;
+    margin-bottom: -rem;
   }
   .card__image {
     height: 130px;
