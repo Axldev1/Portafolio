@@ -300,8 +300,132 @@
   display: flex;
   font-size: 1.5em;
 }
-/* vista móvil */
+/* proyectos */
+.card {
+  margin-top: 12rem;
+  margin-bottom: 5rem;
+  --bg: #f7f7f8;
+  --hover-bg: #FFE5F4;
+  --hover-text: #E50087;
+  max-width: 50ch;
+  text-align: center;
+  background: var(--bg);
+  padding: 1.5em;
+  padding-block: 1.8em;
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  transition: .3s cubic-bezier(.6,.4,0,1),transform .15s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1em;
+  & .icon{
+    font-size: 2rem;
+  }
+}
+
+.card__body {
+  color: #464853;
+  line-height: 1.5em;
+  font-size: 1em;
+}
+
+.card > :not(span) {
+  transition: .3s cubic-bezier(.6,.4,0,1);
+}
+
+.card > strong {
+  display: block;
+  font-size: 1.4rem;
+  letter-spacing: -.035em;
+}
+/* boton go to page */
+.card span {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+  font-weight: bold;
+  top: 100%;
+  transition: all .3s cubic-bezier(.6,.4,0,1);
+}
+
+.card:hover span {
+  top: 0;
+  font-size: 1.2em;
+}
+
+.card:hover {
+  background: var(--hover-bg);
+}
+
+.card:hover>div,.card:hover>strong {
+  opacity: 0;
+}
+.cssbuttons-io {
+  position: relative;
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+  border-radius: 0.8em;
+  border: none;
+  background: linear-gradient(to right, #8e2de2, #4a00e0);
+  color: ghostwhite;
+  overflow: hidden;
+}
+
+.cssbuttons-io svg {
+  width: 1.2em;
+  height: 1.2em;
+  margin-right: 0.5em;
+}
+
+.cssbuttons-io span {
+  position: relative;
+  z-index: 10;
+  transition: color 0.4s;
+  display: inline-flex;
+  align-items: center;
+  padding: 0.8em 1.2em 0.8em 1.05em;
+}
+
+.cssbuttons-io::before,
+.cssbuttons-io::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+.cssbuttons-io::before {
+  content: "";
+  background: #000;
+  width: 120%;
+  left: -10%;
+  transform: skew(30deg);
+  transition: transform 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.cssbuttons-io:hover::before {
+  transform: translate3d(100%, 0, 0);
+}
+
+.cssbuttons-io:active {
+  transform: scale(0.95);
+}
+
+/* vista mobile */
 @media screen and (min-width: 120px) and (max-width: 480px) {
+  /* presentacion vista mobile */
   .content {
     margin-bottom: -110%;
     font-size: 2.4rem;
@@ -310,34 +434,59 @@
     }
   }
   .p-presentation {
-    margin-top: 16rem; 
+    margin-top: 20rem; 
     text-align: center;
   }
   .container-profile-card {
     flex-direction: column-reverse;
     align-items: center;
+  }
+  /* proyectos vista mobile */
+  .card {
+    margin-top: 15rem;
+  }
+  .proyects{
+    margin-bottom: -15rem;
   }
 }
 /* vista tablet */
 @media screen and (min-width: 481px) and (max-width: 992px) {
+  /* presentacion vista tablet */
   .content {
     margin-top: 5%;
     font-size: 2.4rem;
-    &__container{
+    &__container {
       display: none;
     }
   }
   .p-presentation {
-    margin-top: 3rem; 
+    margin-top: 3rem;
     text-align: center;
   }
   .container-profile-card {
     flex-direction: column-reverse;
     align-items: center;
   }
+  .card {
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 12rem;
+  }
+  .proyects {
+    margin-bottom: -6rem;
+  }
+  .card__image {
+    height: 130px;
+  }
+  .btn-card-profile {
+    width: 10rem;
+    font-size: 1rem;
+  }
 }
+
 /* vista laptops */
 @media screen and (min-width: 993px) and (max-width: 1400px) {
+  /* presentacion vista laptops */
   .card-profile{
     margin-bottom: 17rem;
     height: 32rem;
