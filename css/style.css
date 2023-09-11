@@ -195,7 +195,7 @@
 }
 
 .card-profile {
-  margin-left: 50%;
+  margin-left: 30%;
   background-color: #222831;
   width: 22rem;
   height: 37rem;
@@ -352,9 +352,19 @@
   font-size: 1.5em;
 }
 
+/* skills */
+.skills-var {
+  width: 50rem;
+  margin-top: 11rem;
+  height: 25rem;
+}
+.skills-var .skills {
+  font-size: 1.2rem;
+}
+
 /* proyectos */
 .card {
-  margin-top: 12rem;
+  margin-top: 16rem;
   margin-bottom: 5rem;
   --bg: #f7f7f8;
   --hover-bg: #FFE5F4;
@@ -508,9 +518,9 @@
   transition-duration: 0.3s;
 }
 
-/* twitter*/
+/*github*/
 .containerTwo:hover {
-  background-color: #6e6e6e;
+  background-color: #808080;
   transition-duration: 0.3s;
 }
 
