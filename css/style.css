@@ -7,6 +7,15 @@
   background-color: #292726;
 }
 
+/* nav */
+.nav-scrollspy {
+  background-color: #292726;
+}
+
+.nav-link.active {
+  background-color: #05FDE7;
+}
+
 /* texto animado */
 .content {
   transform: translate(0%, -50%);
