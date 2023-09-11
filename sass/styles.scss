@@ -312,7 +312,7 @@
 }
 /* proyectos */
 .card {
-  margin-top: 16rem;
+  margin-top: 13rem;
   margin-bottom: 5rem;
   --bg: #f7f7f8;
   --hover-bg: #FFE5F4;
@@ -511,14 +511,14 @@
 @media screen and (min-width: 120px) and (max-width: 480px) {
   /* presentacion vista mobile */
   .content {
-    margin-bottom: -110%;
+    margin-bottom: -88%;
     font-size: 2.4rem;
     &__container{
       display: none;
     }
   }
   .p-presentation {
-    margin-top: 20rem; 
+    margin-top: 16rem; 
     text-align: center;
   }
   .container-profile-card {
